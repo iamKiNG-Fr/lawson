@@ -29,7 +29,8 @@ section{
 
 .info{
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
 .goals-list{
@@ -59,6 +60,7 @@ h2{
 
 .goal{
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 span{
