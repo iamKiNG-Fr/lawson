@@ -11,13 +11,12 @@ body{
 }
 
 section{
-  
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .main{
@@ -27,25 +26,37 @@ section{
     box-shadow:  0 0 1rem rgb(169, 169, 223);
 }
 
+video{
+    background-color: #2B7DFA;
+    width: 15rem;
+    display: flex;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.top{
+    display: flex;
+}
+
 .info{
     margin-bottom: 1rem;
     font-size: 1.4rem;
     text-align: center;
 }
 
+.goals{
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
 .goals-list{
     padding: 1rem;
     border-radius: 0.6rem;
-    box-shadow: inset 0 0 1rem rgb(51, 51, 68);
-    background-color: #2B7DFA;
-    transition: 1s ease;
-    color: #fff;
+    color: #000;
 }
-.goals-list:hover{
-    background-color: bisque;
-    box-shadow: inset 0 0 1rem rgb(205, 182, 153);
-    color: black;
-}
+
 
 h2{
     text-align: center;
@@ -55,15 +66,60 @@ h2{
 .goals{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .goal{
     margin-bottom: 0.5rem;
-    text-align: center;
 }
 
 span{
     color: bisque;
     font-size: 10rem;
+}
+
+.corevalues{
+    display: flex;
+    justify-content: space-between;
+}
+
+.corevalue{
+    width: 30%;
+    text-align: center;
+    background-color: #2B7DFA;
+    box-shadow: 0 0 10px #2B7DFA;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.valuetitle{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.valueword{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .top{
+        flex-direction: column;
+    }
+
+    .goals{
+        width: 100%;
+        text-align: center;
+    }    
+    
+    .corevalues{
+        flex-direction: column;
+    }
+    
+    .corevalue{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
 }
